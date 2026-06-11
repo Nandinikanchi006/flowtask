@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlowTask - Modern Todo</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-tasks"></i> FlowTask</h1>
+      <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h3 id="total-tasks">0</h3>
+        <p>Total</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="completed-tasks">0</h3>
+        <p>Done</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="pending-tasks">0</h3>
+        <p>Pending</p>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="task-input" placeholder="What needs to be done today?" />
+      <input type="date" id="due-date" />
+      <select id="priority">
+        <option value="medium">Medium</option>
+        <option value="high">High Priority</option>
+        <option value="low">Low Priority</option>
+      </select>
+      <button id="add-btn"><i class="fas fa-plus"></i> Add Task</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="today">Today</button>
+      <input type="text" id="search" placeholder="Search tasks..." />
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+
+    <footer class="app-footer">
+      <p id="task-count">0 tasks left</p>
+      <button id="clear-completed">Clear Completed</button>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
