@@ -319,15 +319,6 @@ Feel free to use, modify, and distribute this project for learning and developme
 4. Push to GitHub
 5. Open a Pull Request
 
-## 👨‍💻 Author
-
-**Kanche Chandu**
-
-Aspiring Software Engineer | AI Engineer | Machine Learning Engineer | Data Engineer
-
-GitHub: https://github.com/Nandinikanchi006
-
----
 
 ⭐ If you like this project, don't forget to star the repository!
 >>>>>>> d6f701b6b1ae8124fe4ade2a7a439f3bb61518ac
